@@ -1,12 +1,12 @@
 import Footer from "../public/components/Footer";
-import Navigation from "../public/components/Navigation";
 import { AppContainer } from "../public/components/styled";
 import ImageGrid from "../public/components/ImageGrid";
+import SecondaryNav from "../public/components/SecondaryNav";
 
 export default function Projects() {
   return (
     <AppContainer>
-      <Navigation />
+      <SecondaryNav />
       <ImageGrid />
       <Footer />
     </AppContainer>

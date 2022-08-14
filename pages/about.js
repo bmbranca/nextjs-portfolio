@@ -1,12 +1,12 @@
-import Navigation from "../public/components/Navigation";
 import Footer from "../public/components/Footer";
 import { AppContainer } from "../public/components/styled";
-import AboutPage from "../public/components/About";
+import AboutPage from "../public/components/AboutPage";
+import SecondaryNav from "../public/components/SecondaryNav";
 
 export default function About() {
   return (
     <AppContainer>
-      <Navigation />
+      <SecondaryNav />
       <AboutPage />
       <Footer />
     </AppContainer>

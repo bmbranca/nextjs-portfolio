@@ -13,6 +13,8 @@ export const projectData = [
     name: "tweet queue",
     tech: "html, css, js, local storage api",
     image: "/img/tweet-queue.jpg",
+    gitHub: "https://github.com/bmbranca/TweetQueue",
+    liveSite: "https://tweet-queue.vercel.app/",
   },
 
   {
@@ -20,26 +22,16 @@ export const projectData = [
     name: "personal dashboard",
     tech: "html, css, js, api",
     image: "/img/momentumclone.jpg",
+    gitHub: "https://github.com/bmbranca/momentum-clone/tree/master",
+    liveSite: "https://bmbranca.github.io/momentum-clone/",
   },
 
   {
     id: 4,
-    name: "Tenzies",
+    name: "tenzies",
     tech: "html, css, js, react",
     image: "/img/tenzies.jpg",
+    gitHub: "https://github.com/bmbranca/react-tenzies-game",
+    liveSite: "https://react-fgst3r.stackblitz.io/",
   },
-
-  // {
-  //   id: 5,
-  //   name: "Movie Search",
-  //   tech: "React, TMDB API",
-  //   image: "/img/movie-search.jpg",
-  // },
-
-  // {
-  //   id: 6,
-  //   name: "Meme Generator",
-  //   tech: "React",
-  //   image: "/img/meme-generator.jpg",
-  // },
 ];

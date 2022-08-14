@@ -8,6 +8,7 @@ import {
   ViewSite,
   Wrapper,
   TechStackText,
+  ProjectName,
 } from "./styled";
 import Link from "next/link";
 
@@ -17,23 +18,19 @@ export default function ProjectCard() {
       <Project key={project.id}>
         <Image
           src={project.image}
-          width="200"
-          height="200"
+          width="700"
+          height="500"
           alt="React E-Commerce Project"
           style={{ borderRadius: "4px 4px 0 0" }}
         />
-        <h4 style={{ marginBottom: "0" }}>{project.name}</h4>
+        <ProjectName>{project.name}</ProjectName>
         <TechStackText>{project.tech}</TechStackText>
         <IconContainer>
-          <Link href="/projects">
-            <a href="https://github.com/bmbranca/react-ecommerce">
-              <Git />
-            </a>
+          <Link href={project.gitHub}>
+            <Git />
           </Link>
-          <Link href="/projects">
-            <a href="https://react-ecommerce-pearl.vercel.app/">
-              <ViewSite />
-            </a>
+          <Link href={project.liveSite}>
+            <ViewSite />
           </Link>
         </IconContainer>
       </Project>

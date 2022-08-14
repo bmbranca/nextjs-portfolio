@@ -1,13 +1,13 @@
-import Experience from "../public/components/Experience";
+import ExperiencePage from "../public/components/ExperiencePage";
 import Footer from "../public/components/Footer";
-import Navigation from "../public/components/Navigation";
+import SecondaryNav from "../public/components/SecondaryNav";
 import { AppContainer } from "../public/components/styled";
 
-export default function Contact() {
+export default function Experience() {
   return (
     <AppContainer>
-      <Navigation />
-      <Experience />
+      <SecondaryNav />
+      <ExperiencePage />
       <Footer />
     </AppContainer>
   );
