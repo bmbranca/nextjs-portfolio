@@ -55,7 +55,7 @@ export const Resume = styled.li`
   color: #494f55;
 
   &:hover {
-    font-style: green;
+    font-style: #03ac13;
     font-style: italic;
     font-weight: bold;
   }
@@ -83,12 +83,12 @@ export const NavLogo = styled.p`
   }
 
   &:hover {
-    font-style: green;
+    font-style: #03ac13;
     font-style: italic;
     font-weight: bold;
   }
   &:active {
-    font-style: green;
+    font-style: #03ac13;
     font-style: italic;
     font-weight: bold;
   }
@@ -107,12 +107,12 @@ export const NavList = styled.ul`
   }
 
   &:hover {
-    font-style: green;
+    font-style: #03ac13;
     font-style: italic;
     font-weight: bold;
   }
   &:active {
-    font-style: green;
+    font-style: #03ac13;
     font-style: italic;
     font-weight: bold;
   }
@@ -124,7 +124,7 @@ export const NavAnchor = styled.p`
   font-size: 1.25rem;
 
   &:hover {
-    color: green;
+    color: #03ac13;
     font-style: italic;
     font-weight: bold;
   }
@@ -147,7 +147,7 @@ export const FootText = styled.p`
   font-size: 1.25rem;
 
   &:hover {
-    color: green;
+    color: #03ac13;
     font-style: italic;
     font-weight: bold;
   }
@@ -184,7 +184,7 @@ export const Git = styled(Github)`
   margin-left: 2em;
 
   &:hover {
-    color: green;
+    color: #03ac13;
     font-weight: bold;
   }
 `;
@@ -195,7 +195,7 @@ export const ViewSite = styled(ViewDesktop)`
   margin-right: 2em;
 
   &:hover {
-    color: green;
+    color: #03ac13;
     font-weight: bold;
   }
 `;
@@ -242,7 +242,7 @@ export const AboutCard = styled.div`
   font-size: 1.25rem;
   line-height: 2rem;
   padding: 1em 2em;
-  margin: 0.25em;
+  margin: 0.5em;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `;
 
@@ -285,7 +285,7 @@ export const ImageTextSplitDiv = styled.div`
   display: flex;
   align-items: center;
   /* max-width: 700px; */
-  border: 1px solid green;
+  border: 1px solid #03ac13;
 `;
 
 export const ExperienceTextContainer = styled.div`
@@ -321,13 +321,13 @@ export const ProjectSelectionItem = styled.div`
   cursor: pointer;
 
   &:hover {
-    font-style: green;
+    font-style: #03ac13;
     font-style: italic;
     font-weight: bold;
   }
 
   &:active {
-    color: green;
+    color: #03ac13;
     font-style: italic;
     font-weight: bold;
   }
@@ -338,7 +338,7 @@ export const ProjectSelectionStatic = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: green;
+  color: #03ac13;
   font-weight: bold;
   margin-right: 1em;
   cursor: pointer;
@@ -349,7 +349,7 @@ export const Underline = styled.div`
   margin-top: 0.2em;
   height: 5px;
   width: 5px;
-  background-color: green;
+  background-color: #03ac13;
   border-radius: 50%;
   display: inline-block;
 `;
@@ -370,7 +370,7 @@ export const ContactItems = styled.li`
 
   &:hover {
     font-style: italic;
-    color: green;
+    color: #03ac13;
     font-weight: bold;
   }
 `;
@@ -386,7 +386,7 @@ export const ContactHomeLink = styled.p`
   cursor: pointer;
   &:hover {
     font-style: italic;
-    color: green;
+    color: #03ac13;
     font-weight: bold;
   }
 `;

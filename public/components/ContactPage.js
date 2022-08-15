@@ -9,6 +9,9 @@ export default function ContactPage() {
         <ContactItemsStatic> 331-401-7602</ContactItemsStatic>
         <ContactItemsStatic> brianbranca@gmail.com</ContactItemsStatic>
         <ContactItems>
+          <Link href="https://github.com/bmbranca">github</Link>
+        </ContactItems>
+        <ContactItems>
           <Link href="https://www.linkedin.com/in/brian-branca/">linkedin</Link>
         </ContactItems>
         <ContactItems>
