@@ -382,7 +382,6 @@ export const ContactItemsStatic = styled.li`
 `;
 
 export const ContactHomeLink = styled.p`
-  padding-right: 2em;
   font-size: 1.25rem;
   cursor: pointer;
   &:hover {
