@@ -271,6 +271,10 @@ export const ExperienceCard = styled.div`
   margin: 2em auto;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const ExperienceHeader = styled.h3`
@@ -296,6 +300,12 @@ export const ExperienceTextContainer = styled.div`
   line-height: 28px;
   text-align: left;
   font-size: 1.15rem;
+
+  @media (max-width: 768px) {
+    max-width: 95%;
+    padding: 0;
+    text-align: center;
+  }
 `;
 
 export const ExperienceImageContainer = styled.div`
