@@ -159,7 +159,6 @@ export const Project = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: left;
   background-color: white;
   max-width: 190px;
@@ -201,24 +200,25 @@ export const ViewSite = styled(ViewDesktop)`
 
 export const Wrapper = styled.div`
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-`;
-
-export const TechStackText = styled.p`
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  font-size: 0.8rem;
-  color: #494f55;
+  /* justify-content: center;
+  flex-wrap: wrap; */
+  border: 1px solid blue;
 `;
 
 export const ProjectName = styled.p`
-  padding: 0;
-  margin: 1em 0 0 0;
   font-size: 1rem;
   font-weight: bold;
   color: #494f55;
+  padding: 0 0 0 4px;
+  margin-bottom: 0;
+`;
+
+export const TechStackText = styled.p`
+  text-align: left;
+  font-size: 0.8rem;
+  color: #494f55;
+  padding: 0 0 0 4px;
+  margin-top: 0;
 `;
 
 export const OtherWork = styled.div`
