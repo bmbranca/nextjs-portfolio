@@ -31,7 +31,7 @@ export default function AboutPage() {
           development and am always prepared to learn, adapt, and evolve.
         </TextWrapper>
       </AboutHeader>
-      <CardContainer> {aboutCardEl}</CardContainer>
+      <CardContainer>{aboutCardEl}</CardContainer>
     </AboutCardWrapper>
   );
 }
