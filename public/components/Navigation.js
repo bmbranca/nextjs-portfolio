@@ -18,11 +18,11 @@ export default function Navigation() {
       </Link>
 
       <Link href="/experience">
-        <NavAnchor>experience</NavAnchor>
+        <NavAnchor>work</NavAnchor>
       </Link>
 
-      <Link href="/projects">
-        <NavAnchor>projects</NavAnchor>
+      <Link href="/contact">
+        <NavAnchor>contact</NavAnchor>
       </Link>
     </Nav>
   );

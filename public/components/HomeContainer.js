@@ -16,7 +16,7 @@ export default function HomeContainer() {
       <Navigation />
       <HomeWrapper>
         <Header>brian branca</Header>
-        <Subheader>front end web developer</Subheader>
+        <Subheader>{"{front end web developer}"}</Subheader>
       </HomeWrapper>
     </>
   );

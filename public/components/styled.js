@@ -7,15 +7,15 @@ export const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
   text-align: center;
   font-family: "Poppins", sans-serif;
+  position: relative;
+  height: 100vh;
 `;
 
 //Home
 export const HomeWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
+  border: 1px red;
 `;
 
 export const Header = styled.h1`
@@ -23,13 +23,14 @@ export const Header = styled.h1`
   padding: 0;
   margin: 0;
   font-weight: 200;
+  border: 1px red;
 `;
 
 export const Subheader = styled.h2`
   padding: 0;
   margin: 0;
   font-weight: 200;
-  color: #494f55;
+  color: #a9a9a9;
 `;
 
 export const ListContainer = styled.ul`
@@ -64,8 +65,9 @@ export const Resume = styled.li`
 //Navigation
 export const Nav = styled.div`
   display: flex;
-  margin: 0 2em;
+  margin: 0 5em;
   justify-content: space-between;
+
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -75,7 +77,7 @@ export const NavLogo = styled.p`
   display: flex;
   padding: 0;
   margin-left: 2em;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #494f55;
 
   @media (max-width: 768px) {
@@ -84,12 +86,10 @@ export const NavLogo = styled.p`
 
   &:hover {
     font-style: #03ac13;
-    font-style: italic;
     font-weight: bold;
   }
   &:active {
     font-style: #03ac13;
-    font-style: italic;
     font-weight: bold;
   }
 `;
@@ -101,19 +101,17 @@ export const NavList = styled.ul`
   text-align: right;
   list-style: none;
   color: #494f55;
-  font-size: 1.25rem;
+  font-size: 1rem;
   @media (max-width: 768px) {
     margin: 0 auto;
   }
 
   &:hover {
     font-style: #03ac13;
-    font-style: italic;
     font-weight: bold;
   }
   &:active {
     font-style: #03ac13;
-    font-style: italic;
     font-weight: bold;
   }
 `;
@@ -125,7 +123,6 @@ export const NavAnchor = styled.p`
 
   &:hover {
     color: #03ac13;
-    font-style: italic;
     font-weight: bold;
   }
 
@@ -148,23 +145,26 @@ export const FootText = styled.p`
 
   &:hover {
     color: #03ac13;
-    font-style: italic;
     font-weight: bold;
   }
 `;
 
 //Project Card
+export const ProjectWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+`;
 export const Project = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
   background-color: white;
-  max-width: 350px;
+  max-width: 190px;
   border-radius: 10px;
-  margin: 2em;
+  margin: 0.5em;
   padding-bottom: 1em;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   font-family: "Poppins", sans-serif;
@@ -173,13 +173,12 @@ export const Project = styled.div`
 export const IconContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 1em;
-
   width: 100%;
+  margin-top: 0.5em;
 `;
 
 export const Git = styled(Github)`
-  width: 30px;
+  width: 25px;
   margin-right: 1em;
   margin-left: 2em;
 
@@ -190,7 +189,7 @@ export const Git = styled(Github)`
 `;
 
 export const ViewSite = styled(ViewDesktop)`
-  width: 35px;
+  width: 25px;
   margin-left: 1em;
   margin-right: 2em;
 
@@ -209,54 +208,101 @@ export const Wrapper = styled.div`
 export const TechStackText = styled.p`
   padding: 0;
   margin: 0;
-  font-size: 1.25rem;
+  text-align: left;
+  font-size: 0.8rem;
   color: #494f55;
 `;
 
 export const ProjectName = styled.p`
   padding: 0;
-  margin: 0.5em 0;
-  font-size: 2rem;
+  margin: 1em 0 0 0;
+  font-size: 1rem;
+  font-weight: bold;
   color: #494f55;
 `;
 
+export const OtherWork = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10em;
+`;
+
+export const OtherWorkText = styled.h3`
+  color: #494f55;
+  margin-bottom: 1em;
+`;
+
 //about
+export const AboutHeader = styled.div`
+  display: flex;
+  max-width: 915px;
+  margin: 0 1em;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+export const AboutTitle = styled.h2`
+  color: black;
+  margin-bottom: 0.25em;
+`;
+
+export const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  color: #8c8c8c;
+  text-align: left;
+  margin: 5em 0 1em 0;
+  max-width: 45%;
+  line-height: 1.5rem;
+`;
+
 export const AboutCardWrapper = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   background-color: white;
   border-radius: 10px;
-  margin: 2em;
-  padding-bottom: 1em;
+  padding-bottom: 10em;
+
   font-family: "Poppins", sans-serif;
 `;
 
 export const AboutCard = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  max-width: 400px;
+  flex-wrap: wrap;
+  max-width: 300px;
   border-radius: 10px;
-  font-size: 1.25rem;
-  line-height: 2rem;
-  padding: 1em 2em;
-  margin: 0.5em;
+  line-height: 1.5rem;
+  padding: 1em;
+  margin: 1em 5px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `;
 
+export const CardContainer = styled.div`
+  display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
 export const BlurbTitle = styled.h2`
-  margin: 0;
-  padding: 0;
-  color: #494f55;
+  margin-bottom: 0;
 `;
 
 // experience
 export const ExperienceContainer = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 650px;
+  max-width: 800px;
   margin: 2em auto;
 
   @media (max-width: 768px) {
@@ -288,7 +334,6 @@ export const ExperienceHeader = styled.h3`
 export const ImageTextSplitDiv = styled.div`
   display: flex;
   align-items: center;
-  /* max-width: 700px; */
   border: 1px solid #03ac13;
 `;
 
@@ -309,7 +354,7 @@ export const ExperienceTextContainer = styled.div`
 `;
 
 export const ExperienceImageContainer = styled.div`
-  max-width: 65%;
+  max-width: 100%;
 `;
 
 export const ProjectSelection = styled.div`
@@ -332,13 +377,11 @@ export const ProjectSelectionItem = styled.div`
 
   &:hover {
     font-style: #03ac13;
-    font-style: italic;
     font-weight: bold;
   }
 
   &:active {
     color: #03ac13;
-    font-style: italic;
     font-weight: bold;
   }
 `;
@@ -379,7 +422,6 @@ export const ContactItems = styled.li`
   padding: 0.5em 0;
 
   &:hover {
-    font-style: italic;
     color: #03ac13;
     font-weight: bold;
   }
@@ -395,7 +437,6 @@ export const ContactHomeLink = styled.p`
   font-size: 1.25rem;
   cursor: pointer;
   &:hover {
-    font-style: italic;
     color: #03ac13;
     font-weight: bold;
   }

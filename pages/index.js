@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../public/components/Footer";
 import HomeContainer from "../public/components/HomeContainer";
+import Footer from "../public/components/Footer";
 
 import { AppContainer } from "../public/components/styled";
 

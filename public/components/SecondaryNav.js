@@ -10,7 +10,11 @@ export default function SecondaryNav() {
   return (
     <Nav>
       <Link href="/">
-        <NavAnchor>home</NavAnchor>
+        <NavAnchor>bb</NavAnchor>
+      </Link>
+
+      <Link href="https://docs.google.com/document/d/1f7qVwilFpOztrz1MePyA20_-A7v9XVaB0qIadTyXHHY/edit?usp=sharing">
+        <NavAnchor>resume</NavAnchor>
       </Link>
 
       <Link href="/about">
@@ -18,11 +22,11 @@ export default function SecondaryNav() {
       </Link>
 
       <Link href="/experience">
-        <NavAnchor>experience</NavAnchor>
+        <NavAnchor>work</NavAnchor>
       </Link>
 
-      <Link href="/projects">
-        <NavAnchor>projects</NavAnchor>
+      <Link href="/contact">
+        <NavAnchor>contacts</NavAnchor>
       </Link>
     </Nav>
   );

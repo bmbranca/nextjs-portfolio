@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { wifiData, cafePickupData } from "./experience-data";
+import { projectData } from "./project-data";
 import {
   ExperienceCard,
   ExperienceContainer,
@@ -11,6 +13,15 @@ import {
   ProjectHeaderText,
   ProjectSelectionStatic,
   Underline,
+  Project,
+  ProjectName,
+  TechStackText,
+  IconContainer,
+  Git,
+  ViewSite,
+  ProjectWrapper,
+  OtherWork,
+  OtherWorkText,
 } from "./styled";
 
 export default function Experience() {
@@ -56,6 +67,30 @@ export default function Experience() {
           </ExperienceImageContainer>
         </ExperienceCard>
       </>
+    );
+  });
+
+  const projectCardEl = projectData.map((project) => {
+    return (
+      <Project key={project.id}>
+        <Image
+          src={project.image}
+          width="700"
+          height="500"
+          alt="React E-Commerce Project"
+          style={{ borderRadius: "4px 4px 0 0" }}
+        />
+        <ProjectName>{project.name}</ProjectName>
+        <TechStackText>{project.tech}</TechStackText>
+        <IconContainer>
+          <Link href={project.gitHub}>
+            <Git />
+          </Link>
+          <Link href={project.liveSite}>
+            <ViewSite />
+          </Link>
+        </IconContainer>
+      </Project>
     );
   });
 
@@ -124,6 +159,10 @@ export default function Experience() {
         )}
         {toggle ? wifiCardEl : cafePickupCardEl}
       </ExperienceContainer>
+      <OtherWork>
+        <OtherWorkText>other work</OtherWorkText>
+        <ProjectWrapper>{projectCardEl}</ProjectWrapper>
+      </OtherWork>
     </>
   );
 }

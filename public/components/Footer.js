@@ -1,15 +1,6 @@
 import React from "react";
-import { Foot, FootText } from "./styled";
-import Link from "next/link";
+import { Foot } from "./styled";
 
 export default function Footer() {
-  return (
-    <>
-      <Foot>
-        <Link href="/contact">
-          <FootText>contact</FootText>
-        </Link>
-      </Foot>
-    </>
-  );
+  return <Foot></Foot>;
 }
