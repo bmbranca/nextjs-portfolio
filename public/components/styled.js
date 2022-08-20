@@ -23,7 +23,7 @@ export const Header = styled.h1`
   padding: 0;
   margin: 0;
   font-weight: 200;
-  border: 1px red;
+  /* color: ${(props) => (props.variant === "blue" ? "green" : "red")}; */
 `;
 
 export const Subheader = styled.h2`
