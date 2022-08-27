@@ -209,7 +209,7 @@ export const ProjectName = styled.p`
   font-size: 1rem;
   font-weight: bold;
   color: #494f55;
-  padding: 0 0 0 4px;
+  padding: 0 0 0 8px;
   margin-bottom: 0;
 `;
 
@@ -217,7 +217,7 @@ export const TechStackText = styled.p`
   text-align: left;
   font-size: 0.8rem;
   color: #494f55;
-  padding: 0 0 0 4px;
+  padding: 0 0 0 8px;
   margin-top: 0;
 `;
 
@@ -232,8 +232,6 @@ export const OtherWorkText = styled.h3`
   color: #494f55;
   margin-bottom: 1em;
 `;
-
-export const ProjectTextWrapper = styled.div``;
 
 //about
 export const AboutHeader = styled.div`

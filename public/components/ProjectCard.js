@@ -9,7 +9,6 @@ import {
   Wrapper,
   TechStackText,
   ProjectName,
-  ProjectTextWrapper,
 } from "./styled";
 import Link from "next/link";
 
@@ -24,10 +23,8 @@ export default function ProjectCard() {
           alt="React E-Commerce Project"
           style={{ borderRadius: "4px 4px 0 0" }}
         />
-        <ProjectTextWrapper>
-          <ProjectName>{project.name}</ProjectName>
-          <TechStackText>{project.tech}</TechStackText>
-        </ProjectTextWrapper>
+        <ProjectName>{project.name}</ProjectName>
+        <TechStackText>{project.tech}</TechStackText>
         <IconContainer>
           <Link href={project.gitHub}>
             <Git />
