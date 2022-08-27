@@ -21,7 +21,7 @@ export default function SecondaryNav() {
         <NavAnchor>about</NavAnchor>
       </Link>
 
-      <Link href="/experience">
+      <Link href="/work">
         <NavAnchor>work</NavAnchor>
       </Link>
 

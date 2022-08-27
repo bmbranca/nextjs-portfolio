@@ -17,7 +17,7 @@ export default function Navigation() {
         <NavAnchor>about</NavAnchor>
       </Link>
 
-      <Link href="/experience">
+      <Link href="/work">
         <NavAnchor>work</NavAnchor>
       </Link>
 

@@ -2,7 +2,7 @@ export const aboutData = [
   {
     index: 1,
     title: "past",
-    text: "I was a teacher for 15 years. I earned two masters degrees in education and wrote an EFL conversation book. During my time as a teacher, I taught students of all ages in pretty much every environment from elementary schools to a university.",
+    text: "I was a teacher for 15 years. I earned two masters degrees and wrote an EFL conversation book. During my time as a teacher, I taught students of all ages in pretty much every environment from the Westside of Chicago to South Korea.",
   },
 
   {
@@ -14,6 +14,6 @@ export const aboutData = [
   {
     index: 3,
     title: "future",
-    text: "My mantra is to improve a little every day. By simply following this mantra, I will continually learn and grow as a web developer. One day, I'd like to mentor young web developers. My background in education and curriculum make me uniquely qualified to take on this role.",
+    text: "My mantra is 'improve a little every day'. By following this process, I will work my way to becoming a senior developer. One day, I'd like to mentor new web developers. My path to web development as well as my background in education & curriculum make me uniquely qualified for this role.",
   },
 ];

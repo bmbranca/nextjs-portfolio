@@ -1,13 +1,20 @@
 import React from "react";
 import Link from "next/link";
-import { ContactWrapper, ContactItems, ContactItemsStatic } from "./styled";
+import {
+  ContactWrapper,
+  ContactItems,
+  ContactItemsStatic,
+  ContactStaticItemsWrapper,
+} from "./styled";
 
 export default function ContactPage() {
   return (
     <ContactWrapper>
       <ul>
-        <ContactItemsStatic> 331-401-7602</ContactItemsStatic>
-        <ContactItemsStatic> brianbranca@gmail.com</ContactItemsStatic>
+        <ContactStaticItemsWrapper>
+          <ContactItemsStatic> 331-401-7602</ContactItemsStatic>
+          <ContactItemsStatic> brianbranca@gmail.com</ContactItemsStatic>
+        </ContactStaticItemsWrapper>
         <ContactItems>
           <Link href="https://github.com/bmbranca">github</Link>
         </ContactItems>

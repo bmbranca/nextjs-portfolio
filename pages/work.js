@@ -3,7 +3,7 @@ import SecondaryNav from "../public/components/SecondaryNav";
 import { AppContainer } from "../public/components/styled";
 import Footer from "../public/components/Footer";
 
-export default function Experience() {
+export default function Work() {
   return (
     <AppContainer>
       <SecondaryNav />

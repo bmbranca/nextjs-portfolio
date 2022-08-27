@@ -4,7 +4,6 @@ import Link from "next/link";
 import { wifiData, cafePickupData } from "./experience-data";
 import { projectData } from "./project-data";
 import {
-  ExperienceCard,
   ExperienceContainer,
   ExperienceImageContainer,
   ExperienceTextContainer,
@@ -22,6 +21,7 @@ import {
   ProjectWrapper,
   OtherWork,
   OtherWorkText,
+  FoxtrotContainer,
 } from "./styled";
 
 export default function Experience() {
@@ -29,44 +29,44 @@ export default function Experience() {
 
   const wifiCardEl = wifiData.map((foxtrot) => {
     return (
-      <>
-        <ExperienceCard key={foxtrot.id}>
-          <ExperienceImageContainer>
-            <Image
-              src={foxtrot.image}
-              width="700"
-              height="500"
-              alt="React E-Commerce Project"
-              style={{ borderRadius: "4px 4px 0 0" }}
-            />
-          </ExperienceImageContainer>
+      <FoxtrotContainer key={foxtrot.id}>
+        <ExperienceTextContainer>
+          <p style={{ margin: "0", padding: "0", textAlign: "left" }}>
+            {foxtrot.text}
+          </p>
+        </ExperienceTextContainer>
 
-          <ExperienceTextContainer>
-            <p>{foxtrot.text}</p>
-          </ExperienceTextContainer>
-        </ExperienceCard>
-      </>
+        <ExperienceImageContainer>
+          <Image
+            src={foxtrot.image}
+            width="700"
+            height="500"
+            alt="React E-Commerce Project"
+            style={{ borderRadius: "4px 4px 0 0" }}
+          />
+        </ExperienceImageContainer>
+      </FoxtrotContainer>
     );
   });
 
   const cafePickupCardEl = cafePickupData.map((foxtrot) => {
     return (
-      <>
-        <ExperienceCard key={foxtrot.id}>
-          <ExperienceTextContainer>
-            <p>{foxtrot.text}</p>
-          </ExperienceTextContainer>
-          <ExperienceImageContainer>
-            <Image
-              src={foxtrot.image}
-              width="700"
-              height="500"
-              alt="React E-Commerce Project"
-              style={{ borderRadius: "4px 4px 0 0" }}
-            />
-          </ExperienceImageContainer>
-        </ExperienceCard>
-      </>
+      <FoxtrotContainer key={foxtrot.id}>
+        <ExperienceTextContainer>
+          <p style={{ margin: "0", padding: "0", textAlign: "left" }}>
+            {foxtrot.text}
+          </p>
+        </ExperienceTextContainer>
+        <ExperienceImageContainer>
+          <Image
+            src={foxtrot.image}
+            width="700"
+            height="500"
+            alt="React E-Commerce Project"
+            style={{ borderRadius: "4px 4px 0 0" }}
+          />
+        </ExperienceImageContainer>
+      </FoxtrotContainer>
     );
   });
 
@@ -151,10 +151,10 @@ export default function Experience() {
           </ProjectHeaderText>
         ) : (
           <ProjectHeaderText>
-            This is a realworld e-commerce application. Customers are able to
-            choose a store, select products for cafe-pickup, and submit the
-            order. The project relies heavily upon React Context and the Foxtrot
-            API. It was built with React, Next.js, and Styled-Components.
+            This is an e-commerce application. Customers are able to choose a
+            store, select products for cafe-pickup, and submit the order. The
+            project relies heavily upon React Context and the Foxtrot API. It
+            was built with React, Next.js, and Styled-Components.
           </ProjectHeaderText>
         )}
         {toggle ? wifiCardEl : cafePickupCardEl}

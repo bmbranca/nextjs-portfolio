@@ -2,7 +2,7 @@ export const wifiData = [
   {
     id: 1,
     project: "wifi",
-    text: "Customers will see an email input on the left, and a cafe image on the right. A different image renders depending on the time of day. Morning: coffee, Afternoon: lunch items, Evening: a glass of wine. ",
+    text: "Customers see an email input on the left, and a cafe image on the right. A different image renders depending on the time of day. Morning: coffee, Afternoon: lunch items, Evening: a glass of wine. ",
     image: "/img/toast.png",
   },
 

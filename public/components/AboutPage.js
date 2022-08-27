@@ -3,7 +3,7 @@ import { aboutData } from "./about-data";
 import {
   AboutCard,
   AboutCardWrapper,
-  AboutHeader,
+  CardWrapper,
   BlurbTitle,
   TextWrapper,
   CardContainer,
@@ -15,23 +15,23 @@ export default function AboutPage() {
     return (
       <>
         <AboutCard key={blurb.id}>
-          <BlurbTitle>{blurb.title}</BlurbTitle>
-          <p>{blurb.text}</p>
+          <BlurbTitle style={{ textAlign: "left" }}>{blurb.title}</BlurbTitle>
+          <p style={{ textAlign: "left" }}>{blurb.text}</p>
         </AboutCard>
       </>
     );
   });
   return (
     <AboutCardWrapper>
-      <AboutHeader>
+      <CardContainer>
         <TextWrapper>
           <AboutTitle>about</AboutTitle>I am a career-changing, self-taught
           front end developer passionate about building clean, simple, and
           efficient web-interfaces. I am focused on the fundamentals of web
           development and am always prepared to learn, adapt, and evolve.
         </TextWrapper>
-      </AboutHeader>
-      <CardContainer>{aboutCardEl}</CardContainer>
+        <CardWrapper>{aboutCardEl}</CardWrapper>
+      </CardContainer>
     </AboutCardWrapper>
   );
 }

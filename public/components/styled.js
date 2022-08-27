@@ -15,22 +15,49 @@ export const AppContainer = styled.div`
 
 //Home
 export const HomeWrapper = styled.div`
-  border: 1px red;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Header = styled.h1`
-  font-size: 3.5rem;
+  font-size: 4rem;
   padding: 0;
   margin: 0;
+  margin-bottom: -15px;
   font-weight: 200;
+
   /* color: ${(props) => (props.variant === "blue" ? "green" : "red")}; */
+
+  @media (max-width: 415px) {
+    font-size: 3.5rem;
+  }
+
+  @media (max-width: 370px) {
+    font-size: 3.25rem;
+  }
+
+  @media (max-width: 312px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 281px) {
+    font-size: 3rem;
+  }
 `;
 
 export const Subheader = styled.h2`
+  font-size: 2rem;
   padding: 0;
   margin: 0;
   font-weight: 200;
-  color: #a9a9a9;
+  color: #a4a4a4;
+
+  @media (max-width: 415px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 370px) {
+    font-size: 1.25rem;
+  }
 `;
 
 export const ListContainer = styled.ul`
@@ -62,14 +89,19 @@ export const Resume = styled.li`
   }
 `;
 
+export const Spacer = styled.div`
+  border: 70px solid white;
+`;
+
 //Navigation
 export const Nav = styled.div`
   display: flex;
-  margin: 0 5em;
+  margin: -8px 5em;
   justify-content: space-between;
 
   @media (max-width: 768px) {
     flex-direction: column;
+    margin-top: 1em;
   }
 `;
 
@@ -102,8 +134,9 @@ export const NavList = styled.ul`
   list-style: none;
   color: #494f55;
   font-size: 1rem;
+  border: 1px solid red;
   @media (max-width: 768px) {
-    margin: 0 auto;
+    margin: 2em auto;
   }
 
   &:hover {
@@ -154,6 +187,7 @@ export const ProjectWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 2em;
 `;
 export const Project = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
@@ -228,16 +262,14 @@ export const OtherWork = styled.div`
   padding-bottom: 10em;
 `;
 
-export const OtherWorkText = styled.h3`
+export const OtherWorkText = styled.h2`
   color: #494f55;
-  margin-bottom: 1em;
 `;
 
 //about
 export const AboutHeader = styled.div`
   display: flex;
   max-width: 915px;
-  margin: 0 1em;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -254,10 +286,11 @@ export const AboutTitle = styled.h2`
 export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  color: #8c8c8c;
+  justify-content: center;
+  color: #757575;
   text-align: left;
   margin: 5em 0 1em 0;
-  max-width: 45%;
+  max-width: 300px;
   line-height: 1.5rem;
 `;
 
@@ -267,10 +300,10 @@ export const AboutCardWrapper = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   background-color: white;
   border-radius: 10px;
   padding-bottom: 10em;
-
   font-family: "Poppins", sans-serif;
 `;
 
@@ -286,11 +319,26 @@ export const AboutCard = styled.div`
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `;
 
-export const CardContainer = styled.div`
+export const CardWrapper = styled.div`
   display: flex;
 
   @media (max-width: 768px) {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+export const CardContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -303,19 +351,29 @@ export const ExperienceContainer = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 800px;
-  margin: 2em auto;
+  margin: 5em auto;
 
   @media (max-width: 768px) {
     margin: 1em;
   }
 `;
 
+export const FoxtrotContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #757575;
+  margin-bottom: 6em;
+  padding-bottom: 0;
+`;
+
 export const ExperienceCard = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  margin: 2em auto;
-  border-radius: 10px;
+  margin: 0 auto 7em auto;
+
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
   @media (max-width: 768px) {
@@ -332,15 +390,15 @@ export const ExperienceHeader = styled.h3`
 `;
 
 export const ImageTextSplitDiv = styled.div`
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   border: 1px solid #03ac13;
 `;
 
 export const ExperienceTextContainer = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
   font-family: "Poppins", sans-serif;
-  max-width: 40%;
+  max-width: 70%;
   padding: 0 1em;
   line-height: 28px;
   text-align: left;
@@ -369,6 +427,7 @@ export const ProjectHeaderText = styled.p`
   padding-right: 1em;
   text-align: left;
   font-size: 1.25rem;
+  margin-bottom: 3em;
 `;
 
 export const ProjectSelectionItem = styled.div`
@@ -419,7 +478,6 @@ export const ContactItems = styled.li`
   list-style: none;
   cursor: pointer;
   font-size: 1.25rem;
-  padding: 0.5em 0;
 
   &:hover {
     color: #03ac13;
@@ -430,7 +488,8 @@ export const ContactItems = styled.li`
 export const ContactItemsStatic = styled.li`
   list-style: none;
   font-size: 1.25rem;
-  padding: 0.5em 0;
+  padding: 0;
+  margin: 0;
 `;
 
 export const ContactHomeLink = styled.p`
@@ -440,4 +499,10 @@ export const ContactHomeLink = styled.p`
     color: #03ac13;
     font-weight: bold;
   }
+`;
+
+export const ContactStaticItemsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
 `;
