@@ -233,6 +233,8 @@ export const OtherWorkText = styled.h3`
   margin-bottom: 1em;
 `;
 
+export const ProjectTextWrapper = styled.div``;
+
 //about
 export const AboutHeader = styled.div`
   display: flex;
