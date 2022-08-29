@@ -13,7 +13,7 @@ export default function ContactPage() {
       <ul>
         <ContactStaticItemsWrapper>
           <ContactItemsStatic> 331-401-7602</ContactItemsStatic>
-          <ContactItemsStatic> brianbranca@gmail.com</ContactItemsStatic>
+          <ContactItemsStatic> brianbranca16@gmail.com</ContactItemsStatic>
         </ContactStaticItemsWrapper>
         <ContactItems>
           <Link href="https://github.com/bmbranca" target="_blank">
