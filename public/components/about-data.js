@@ -8,7 +8,7 @@ export const aboutData = [
   {
     index: 2,
     title: "present",
-    text: "Most recently, I was a Front-End Engineer at Foxtrot Market in Chicago. My work included building components for the component library and creating the in-store wifi page and the cafe-pickup e-commerce page. I worked with React.js, Next.js, and styled-components.",
+    text: "Most recently, I was a Front-End Engineer intern at Foxtrot Market in Chicago. My work included building components for the component library and creating the in-store wifi page and the cafe-pickup e-commerce page. I worked with React.js, Next.js, and styled-components.",
   },
 
   {

@@ -90,7 +90,7 @@ export const Resume = styled.li`
 `;
 
 export const Spacer = styled.div`
-  border: 70px solid white;
+  border: 60px solid white;
 `;
 
 //Navigation
@@ -167,19 +167,13 @@ export const NavAnchor = styled.p`
 //footer
 export const Foot = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
-export const FootText = styled.p`
-  cursor: pointer;
+export const FooterText = styled.small`
   color: #494f55;
-  font-size: 1.25rem;
-
-  &:hover {
-    color: #03ac13;
-    font-weight: bold;
-  }
 `;
 
 //Project Card
