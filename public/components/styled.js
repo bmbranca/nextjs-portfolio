@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Github } from "@styled-icons/bootstrap/Github";
-import { ViewDesktop } from "@styled-icons/fluentui-system-regular/ViewDesktop";
+import { EyeOutline } from "@styled-icons/evaicons-outline/EyeOutline";
 
 export const AppContainer = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
@@ -215,8 +215,8 @@ export const Git = styled(Github)`
   }
 `;
 
-export const ViewSite = styled(ViewDesktop)`
-  width: 25px;
+export const ViewSite = styled(EyeOutline)`
+  width: 35px;
   margin-left: 1em;
   margin-right: 2em;
 
