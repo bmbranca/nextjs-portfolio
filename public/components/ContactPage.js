@@ -17,7 +17,9 @@ export default function ContactPage() {
         </ContactStaticItemsWrapper>
         <ContactItems>
           <Link href="https://github.com/bmbranca" target="_blank">
-            github
+            <a href="https://github.com/bmbranca" target="_blank">
+              github
+            </a>
           </Link>
         </ContactItems>
         <ContactItems>
