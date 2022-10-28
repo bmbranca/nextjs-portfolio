@@ -8,7 +8,6 @@ export default function Contact() {
     <AppContainer>
       <SecondaryNav />
       <ContactPage />
-
       <Footer />
     </AppContainer>
   );
