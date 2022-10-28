@@ -1,17 +1,18 @@
 import React from "react";
 import HomeContainer from "../public/components/HomeContainer";
 import Footer from "../public/components/Footer";
-import { useIntercom } from "react-use-intercom";
 import { AppContainer } from "../public/components/styled";
+import { IntercomProvider } from "react-use-intercom";
+
+const INTERCOM_APP_ID = "opso6xil";
 
 export default function Home() {
-  const { boot } = useIntercom();
   return (
-    <AppContainer>
-      <HomeContainer />
-      <button onClick={() => boot()}>Boot</button>
-
-      <Footer />
-    </AppContainer>
+    <IntercomProvider appId={INTERCOM_APP_ID}>
+      <AppContainer>
+        <HomeContainer />
+        <Footer />
+      </AppContainer>
+    </IntercomProvider>
   );
 }
